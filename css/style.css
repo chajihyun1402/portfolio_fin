@@ -1,0 +1,420 @@
+@import url(//db.onlinewebfonts.com/c/9ecec61376083fd290b75d94fdaca380?family=Baskerville+Old+Face);
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap');
+@import url(https://cdn.rawgit.com/kattergil/NotoSerifKR-Web/76eb9ebf/stylesheet/NotoSerif-Web.css);
+
+* {margin: 0; padding: 0; box-sizing: border-box}
+ul {list-style: none}
+a {text-decoration: none; color: inherit}
+
+header {position: fixed;top: 0; left:0; right:0;z-index: 999;height: 100px; font-family: "Noto Sans CJK KR"}
+header .navset {overflow: hidden;position: relative;width: 1280px;margin: 0 auto;display: flex;justify-content: space-between;align-items: center;height: 100%}
+header .navset h1 {float: left; font-size: 22px; color: #f0ebe1; cursor: pointer}
+header .navset .navlist {margin-right: 70px; font-size: 18px; font-weight:lighter}
+header .navset .navlist > li {float: left}
+header .navset .navlist > li > a {color: #f0ebe1; padding: 10px 25px}
+
+
+
+
+header.co1 .navset .navlist > li > a {color:#000}
+header.co1 .navset h1 {color:#000}
+header.co1 .navset .navlist > li.on > a {color:#339159}
+
+header.co2 .navset .navlist > li > a {color:#000}
+header.co2 .navset h1 {color:#000}
+header.co2 .navset .navlist > li.on > a {color:#5db2d8}
+
+header.co3 .navset .navlist > li > a {color:#000}
+header.co3 .navset h1 {color:#000}
+header.co3 .navset .navlist > li.on > a {color:#fbadb4}
+
+header.co4 .navset .navlist > li > a {color:#000}
+header.co4 .navset h1 {color:#000}
+header.co4 .navset .navlist > li.on > a {color:#6e79a1}
+
+header.co5 .navset .navlist > li > a {color:#000}
+header.co5 .navset h1 {color:#000}
+header.co5 .navset .navlist > li.on > a {color:#efa039}
+
+header.co1 .navset .navlist > li.on > a { }
+.wrap .box{
+    position: relative;
+    height: 100vh
+}
+.wrap .box.pg1 {
+    height:100vh;
+    background:url('../img/main-bg.jpg') no-repeat center / cover
+}
+.wrap .box.pg1 .gridbox {
+    position:relative;
+    width:1280px;
+    margin:0 auto;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 2%
+}
+.wrap .box.pg1 .gridbox .title { 
+    color:#fff; 
+    font-family: "Baskerville Old Face";
+    font-size:200px;
+    font-weight:normal
+}
+.wrap .box.pg1 .gridbox .title .pos {display: block}
+.wrap .box.pg1 .gridbox .title .pos:nth-child(2) {font-size: 170px}
+.wrap .box.pg1 .gridbox .title .pos:nth-child(3) {text-align: right; transform: translateX(29px)}
+.wrap .box.pg1 .gridbox .stxt {
+    color: #fff;
+    position: absolute;
+    left: 10px;
+    bottom: 140px;
+    font-family: "Baskerville Old Face";
+    font-size: 37px;
+    opacity: .7
+}
+.wrap .box.pg1 .gridbox .stxt2 {
+    color: #fff;
+    position: absolute;
+    right: 110px;
+    top: 350px;
+    font-family: "Baskerville Old Face";
+    font-size: 16px;
+    letter-spacing: 5px
+}
+.wrap .box.pg2 {
+    height:100vh;
+    background:url('../img/main-bg2.jpg') no-repeat center / cover
+}
+.wrap .box.pg2 .gridbox {
+    position: relative;
+    width: 1221px;
+    margin: 0 auto;
+    height: 100%
+}
+.wrap .box.pg2 .gridbox .grid-l {
+    position: absolute;
+    top: 40%;
+    left: 35px;
+    transform: translateX(-95px);
+    display: block;
+    opacity: 0;
+    animation-duration:  1s;
+    animation-fill-mode:forwards;
+}
+.wrap .box.pg2.active .gridbox .grid-l {
+    animation-name:txtpop;
+}
+
+@keyframes txtpop{
+    0%{transform: translateX(-95px);}
+    100%{transform:translateX(0); opacity: 1;}
+}
+
+.wrap .box.pg2 .gridbox .grid-l .pos {
+    display: block;
+    font-family: "Noto Sans CJK KR";
+    font-weight: lighter
+}
+.wrap .box.pg2 .gridbox .grid-l .pos:nth-child(2) {
+    font-size: 20px; 
+    color: #8c8371;
+    letter-spacing: 9px;
+    margin: 15px 0 40px 0
+}
+.wrap .box.pg2 .gridbox .grid-l .pos:nth-child(2)::after {
+    content:"";
+    display:
+    inline-block;
+    width:210px;
+    height:1px;
+    background:#8c8371;
+    opacity: .7;
+    vertical-align: middle
+}
+.wrap .box.pg2 .gridbox .grid-l .stxt {
+    font-size: 16px;
+    font-family: "Noto Serif KR";
+    line-height: 2
+}
+
+.wrap .box.pg2 em {font-style: normal}
+.wrap .box.pg2 em.point1 {font-weight: bold}
+
+.wrap .box.pg2 .gridbox .grid-r {
+    position: absolute;
+    top: 20%; right: 40px;
+    font-family: "Noto Sans KR";
+    color: #58574b
+}
+.wrap .box.pg2 .gridbox .grid-r > div {margin-top: 35px;}
+.wrap .box.pg2 .gridbox .grid-r > div > h2{font-size: 18px; color: #000;}
+.wrap .box.pg2 .gridbox .grid-r > div > h2::after{
+    content:"";
+    display:block;
+    width:333px;
+    height:1px;
+    opacity: .7;
+    background: #212121;
+    margin: 3px 0 7px 0
+}
+
+.wrap .box.pg2 .gridbox .grid-r .box1{}
+.wrap .box.pg2 .gridbox .grid-r .box1 .a-list {font-size: 15px}
+.wrap .box.pg2 .gridbox .grid-r .box1 .a-list > li {letter-spacing: 1px; overflow: hidden}
+.wrap .box.pg2 .gridbox .grid-r .box1 .a-list > li > .tit {font-weight: bold}
+.wrap .box.pg2 .gridbox .grid-r .box1 .a-list > li > .sub {float: right}
+
+.wrap .box.pg2 .gridbox .grid-r .box2{}
+.wrap .box.pg2 .gridbox .grid-r .box2 .words {font-size: 15px; margin-top: 12px}
+.wrap .box.pg2 .gridbox .grid-r .box2 .words > span { border: 1px solid #211a12; border-radius: 20px; padding: 0 7px; margin-right: 5px}
+
+.wrap .box.pg2 .gridbox .grid-r .box3{}
+.wrap .box.pg2 .gridbox .grid-r .box3 .s-list {font-size: 14px; font-weight: bold}
+.wrap .box.pg2 .gridbox .grid-r .box3 .s-list > li {letter-spacing: 1px; margin-bottom: 1px;}
+.wrap .box.pg2 .gridbox .grid-r .box3 .s-list > li > .tit {
+    display: inline-block;
+    min-width: 160px
+}
+.wrap .box.pg2 .gridbox .grid-r .box3 .s-list > li > .graph {
+    overflow: hidden;
+    display: inline-block
+}
+.wrap .box.pg2 .gridbox .grid-r .box3 .s-list > li > .graph > li {
+    width: 11px;
+    height: 11px;
+    background: #fff;
+    border: 1px solid #39322a;
+    border-radius: 50%;
+    float: left
+}
+.wrap .box.pg2 .gridbox .grid-r .box3 .s-list > li > .graph > li+li {margin-left: 4px}
+.wrap .box.pg2 .gridbox .grid-r .box3 .s-list > li > .graph > li.on {
+    background: #f5d699
+}
+.wrap .box.pg2 .gridbox .grid-r .box4{}
+.wrap .box.pg2 .gridbox .grid-r .box4 .c-list {font-size: 15px; overflow: hidden;}
+.wrap .box.pg2 .gridbox .grid-r .box4 .c-list .sub1 {float: left}
+.wrap .box.pg2 .gridbox .grid-r .box4 .c-list .sub1 > li{margin-bottom: 3px;}
+.wrap .box.pg2 .gridbox .grid-r .box4 .c-list .sub2{float: right; margin-right: 85px;}
+.wrap .box.pg2 .gridbox .grid-r .box4 .c-list .sub2 > li{margin-bottom: 3px}
+
+.wrap .box.pg3 {
+    height:100vh;
+    overflow: hidden;
+}
+.wrap .box.pg3 .gridbox {
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2%;
+}
+.wrap .box.pg3 .gridbox .gridlist {
+    font-family: "Noto Sans KR";
+    padding-left: 13%;
+}
+.wrap .box.pg3 .gridbox .gridlist .webmain {}
+.wrap .box.pg3 .gridbox .gridlist p.webname {
+    font-size: 33px;
+    color: #58574b;
+    font-weight: bold;
+    margin-top: -9px;
+}
+.wrap .box.pg3 .gridbox .gridlist > div {margin-top: 25px;}
+.wrap .box.pg3 .gridbox .gridlist > div > h3 {font-size: 15px;color: #212121;}
+.wrap .box.pg3 .gridbox .gridlist > div > h3::after {
+    content:"";
+    display:block;
+    width:333px;
+    height:1px;
+    background: #212121;
+    margin: 5px 0 7px 0;
+    opacity: .7
+}
+.wrap .box.pg3 .gridbox .gridlist > div > p {font-size: 15px;color: #757575}
+.wrap .box.pg3 .gridbox .gridlist .box3 .colorball {
+    overflow: hidden;
+    display: inline-block;
+    margin-top: 3px
+}
+.wrap .box.pg3 .gridbox .gridlist .box3 .colorball > li {
+    width: 34px;
+    height: 34px;
+    border: 1px solid #39322a;
+    border-radius: 50%;
+    float: left
+}
+.wrap .box.pg3 .gridbox .gridlist .box3 .colorball > li + li {margin-left: 10px}
+.wrap .box.pg3 .gridbox .gridlist .box3 .colorball > li:nth-child(1) {background: #f7f6f3}
+.wrap .box.pg3 .gridbox .gridlist .box3 .colorball > li:nth-child(2) {background: #5db2d8}
+.wrap .box.pg3 .gridbox .gridlist .box3 .colorball > li:nth-child(3) {background: #174e88}
+.wrap .box.pg3 .gridbox .gridlist .box3 .colorball > li:nth-child(4) {background: #122c50}
+.wrap .box.pg3 .gridbox .gridlist .box3 .colorball > li:nth-child(5) {background: #686969}
+.wrap .box.pg3 .gridbox .gridlist .box4 {overflow: hidden;margin-top: 60px;}
+.wrap .box.pg3 .gridbox .gridlist .box4 > ul {
+    width: 135px;
+    height: 45px;
+    background: #f5d699;
+    border: 1px solid #39322a;
+    border-radius: 50px;
+    float: left;
+    margin-right: 30px;
+}
+.wrap .box.pg3 .gridbox .gridlist .box4 > ul > li{
+    color: #000;
+    line-height: 41px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.wrap .box.pg3 .gridbox .gridlist .box4 > ul > li > a {display: block;text-align: center;}
+.wrap .box.pg3 .gridbox .gridlist .box4 > ul > li > a::after {
+    content:"";
+    display:inline-block;
+    width:6px;
+    height:10px;
+    background:url('../img/arrow.png') no-repeat 0 0;
+    vertical-align: middle;
+    margin: 0 0 1px 19px;
+}
+.wrap .box.pg3 .gridbox .gridlist .box4 > ul:active {    
+    background: #fff2d9;
+}
+
+.wrap .box.pg3 .gridbox .grid-r {padding-right: 24px}
+.wrap .box.pg3 .gridbox .grid-r .macbook a img{width:90%}
+
+
+.view03 .grid-r  {position: relative;}
+.iphone {position: absolute; top: 6.5%; left: 65%;}
+.iphone a img {width: 70%;}
+.wrap .box.pg3.view02 .gridbox .gridlist .box3 .colorball > li:nth-child(1) {background: #eaffe9}
+.wrap .box.pg3.view02 .gridbox .gridlist .box3 .colorball > li:nth-child(2) {background: #f6edac}
+.wrap .box.pg3.view02 .gridbox .gridlist .box3 .colorball > li:nth-child(3) {background: #fbadb4}
+.wrap .box.pg3.view02 .gridbox .gridlist .box3 .colorball > li:nth-child(4) {background: #eeb4c2}
+.wrap .box.pg3.view02 .gridbox .gridlist .box3 .colorball > li:nth-child(5) {background: #1e6534}
+
+.wrap .box.pg3.view03 .gridbox .gridlist .box3 .colorball > li:nth-child(1) {background: #bb5454}
+.wrap .box.pg3.view03 .gridbox .gridlist .box3 .colorball > li:nth-child(2) {background: #eec34d}
+.wrap .box.pg3.view03 .gridbox .gridlist .box3 .colorball > li:nth-child(3) {background: #808080}
+.wrap .box.pg3.view03 .gridbox .gridlist .box3 .colorball > li:nth-child(4) {background: #438482}
+.wrap .box.pg3.view03 .gridbox .gridlist .box3 .colorball > li:nth-child(5) {background: #22352e}
+
+
+
+
+
+#lypop {position:fixed; top:0; left:0; width:100%; height: 100vh; z-index: 9999; display: none}
+
+#lypop .inner {position:absolute; width:810px; height:96vh; top:50%; left:50%; margin:-48vh 0 0 -400px; z-index: 100; border:1px solid #fff;}
+#lypop .lypopcont {overflow: auto; height:100%; overflow-x:hidden;}
+#lypop .inner .closebtn {
+position:absolute; top:0; right:-50px;
+display:block; width:30px; height:30px;
+}
+
+#lypop .inner .closebtn .arrset {display: block; width:30px; height: 30px; position:absolute; top:0; left: 0; right:0; bottom:0; margin:auto;}
+#lypop .inner .closebtn .arrset span {display:block; width:30px; height:2px; background:#fff; }
+#lypop .inner .closebtn .arrset span + span {margin-top:10px}
+#lypop .inner .closebtn .arrset span:nth-child(1) {transform: translateY(13px) rotate(45deg)}
+#lypop .inner .closebtn .arrset span:nth-child(2) {transform: translateY(1px) rotate(-45deg)}
+
+
+#lypop .lypopcont .simg {height: 100%;}
+#lypop .lypopcont .simg > img {vertical-align: middle;}
+#lypop .bg {position:absolute; top:0; left:0; width:100%; height: 100vh; background:rgba(0,0,0,0);}
+
+#lypop.on {display:block}
+#lypop.on .bg {animation: bgani .5s linear 1; background:rgba(0,0,0,.3) }
+
+
+@keyframes bgani { 
+	0% {background:rgba(0,0,0,0)}
+	50% {}
+	100% {background:rgba(0,0,0,.3)}
+}
+
+/* 스크롤바 폭 */
+#lypop .lypopcont::-webkit-scrollbar {
+    width: 14px;
+    /* 여기서 height가 의미가 있나? */
+  }
+  /* 스크롤바에서 움직이는 부분 */
+  #lypop .lypopcont::-webkit-scrollbar-thumb {
+    box-shadow: inset 0px 0px 3px #fff;
+    border-radius: 10px;
+    background: #dfdfdf
+    
+    /* opacity를 사용하기도 하는 것 같다. */
+  }
+  /* 스크롤바 움직이는 길 */
+  #lypop .lypopcont::-webkit-scrollbar-track {
+    background-color: #fff;
+  }
+
+
+
+  .wrap .box.pg4 {
+    height:100vh;
+    position: relative;
+  }
+
+  .ins-view{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+  }
+
+  .ins-view figure{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+
+  .ins-view figure img{
+    max-height: 650px;
+  }
+
+  .ins-view .closeWrap{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .ins-gal {
+    padding-top: 200px;
+  }
+  .ins-gal > ul {
+    width: 1000px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .ins-gal > ul > li {
+    margin-bottom: 20px;
+    width: 320px;
+    height: 320px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .ins-gal li img{
+    width: 120%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+
+  .ins-gal li img:hover{
+    transition: all 2s;
+    transform: translate(-50%,-50%) scale(1.3);
+  }

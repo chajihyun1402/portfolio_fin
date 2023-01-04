@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Renewal 01</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/kursor.css">
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <script src="js/gsap.min.js"></script>
+    <script src="js/ScrollTrigger.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://unpkg.com/kursor"></script>
+    <script src="js/jquery.mousewheel.min.js"></script>
+
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <div class="navset">
+                <div class="logo"><a href="javascript:void(0)"><img src="img/logo.png" alt="logo"></a></div>
+                <ul class="navlist">
+                    <li><a href="javascript:void(0)">회사소개</a></li>
+                    <li><a href="javascript:void(0)">제품소개</a></li>
+                    <li><a href="javascript:void(0)">품질/관리</a></li>
+                    <li><a href="javascript:void(0)">홍보센터</a></li>
+                    <li><a href="javascript:void(0)">고객센터</a></li>
+                    <li><a href="javascript:void(0)">인재채용</a></li>
+                </ul>
+                <div class="btn_menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+
+            <nav>
+                <div class="sub-gnb">
+                    <div>
+                        <p>회사소개</p>
+                        <ul class="depth1">
+                            <li><a href="javascript:void(0)">CEO 인사말</a></li>
+                            <li><a href="javascript:void(0)">연혁</a></li>
+                            <li><a href="javascript:void(0)">기업이념</a></li>
+                            <li><a href="javascript:void(0)">C.I 소개</a></li>
+                            <li><a href="javascript:void(0)">사업장 안내</a></li>
+                            <li><a href="javascript:void(0)">찾아오시는 길</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p>제품소개</p>
+                        <ul class="depth2">
+                            <li><a href="javascript:void(0)">양계</a></li>
+                            <li><a href="javascript:void(0)">양돈</a></li>
+                            <li><a href="javascript:void(0)">축우</a></li>
+                            <li><a href="javascript:void(0)">양어</a></li>
+                            <li><a href="javascript:void(0)">기타</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p>품질/관리</p>
+                        <ul class="depth3">
+                            <li><a href="javascript:void(0)">연구소 소개</a></li>
+                            <li><a href="javascript:void(0)">기술 제휴</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p>홍보센터</p>
+                        <ul class="depth4">
+                            <li><a href="javascript:void(0)">기업 홍보영상</a></li>
+                            <li><a href="javascript:void(0)">언론보도</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p>고객센터</p>
+                        <ul class="depth5">
+                            <li><a href="javascript:void(0)">공지사항</a></li>
+                            <li><a href="javascript:void(0)">FAQ</a></li>
+                            <li><a href="javascript:void(0)">고객문의</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p>인재채용</p>
+                        <ul class="depth6">
+                            <li><a href="javascript:void(0)">채용</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- position absolute 띄워야 됩니다 -->
+            </nav>
+            <div class="all-menu">
+                <div class="menu-wrap">
+                    <button><a href="javascript:void(0)" class="all-menubtn"></a></button>
+                    <div class="centre">
+                        <div class="inner">
+                            <ul class="menu-tit">
+                                <li>
+                                    <a href="javascript:void(0)">회사소개</a>
+                                    <ul class="menu-sub">
+                                        <li><a href="javascript:void(0)">CEO 인사말</a></li>
+                                        <li><a href="javascript:void(0)">연혁</a></li>
+                                        <li><a href="javascript:void(0)">기업이념</a></li>
+                                        <li><a href="javascript:void(0)">C.I 소개</a></li>
+                                        <li><a href="javascript:void(0)">사업장 안내</a></li>
+                                        <li><a href="javascript:void(0)">찾아오시는 길</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">제품소개</a>
+                                    <ul class="menu-sub">
+                                        <li><a href="javascript:void(0)">양계</a></li>
+                                        <li><a href="javascript:void(0)">양돈</a></li>
+                                        <li><a href="javascript:void(0)">축우</a></li>
+                                        <li><a href="javascript:void(0)">양어</a></li>
+                                        <li><a href="javascript:void(0)">기타</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">품질/관리</a>
+                                    <ul class="menu-sub">
+                                        <li><a href="javascript:void(0)">연구소 소개</a></li>
+                                        <li><a href="javascript:void(0)">기술 제휴</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">홍보센터</a>
+                                    <ul class="menu-sub">
+                                        <li><a href="javascript:void(0)">기업 홍보영상</a></li>
+                                        <li><a href="javascript:void(0)">언론보도</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">고객센터</a>
+                                    <ul class="menu-sub">
+                                        <li><a href="javascript:void(0)">공지사항</a></li>
+                                        <li><a href="javascript:void(0)">FAQ</a></li>
+                                        <li><a href="javascript:void(0)">고객문의</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">인재채용</a>
+                                    <ul class="menu-sub">
+                                        <li><a href="javascript:void(0)">채용</a></li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="box pg1">
+            <div class="gridbox">
+                <span class="tit">The first food for all</span>
+                <p class="stxt">앞선 노하우로 인류 행복과 생명의 가치를 창조합니다.</p>
+            </div>
+        </div>
+        <div class="box pg2">
+            <div class="gridbox">
+                <div class="ci-logo">
+                    <img src="img/round1.png" class="round1">
+                    <img src="img/round2.png" class="round2">
+                    <img src="img/ci-logo.png" class="logo">
+                    <div class="ci-txt">
+                        <ul class="ci-ball">
+                            <li class="ball1"></li>
+                            <li class="ball2"></li>
+                            <li class="ball3"></li>
+                            <li class="ball4"></li>
+                        </ul>
+                    </div>
+                    <!--ci-txt-->
+                </div>
+                <!--ci-logo-->
+                <div class="txt">
+                    <p class="tit">
+                        <span><strong>Strength,</strong></span>
+                        <span><strong>Persistence, and Tenacity</strong></span>
+                    </p>
+                    <p class="stxt">대한사료는 빠르게 변화하는 세상 속 묵묵한 끈기와 집념으로<br />
+                        한 걸음씩 만들어온 오랜 역사를 한 장 한 장 쌓아왔습니다.<br />
+                        인간과 동물을 위한 생활의 기초 단계부터 필요한 제품 서비스를 제공한다는 마음으로<br />
+                        오늘도 우리는 고객의 풍요로운 생활을 여는 가치를 쌓아가며 고객을 향해 발걸음을 옮깁니다.
+                    </p>
+                </div>
+                <!--txt-->
+            </div>
+            <!--gridbox-->
+        </div>
+        <div class="box pg3">
+            <div class="gridbox">
+                <div class="title">
+                    <h1 class="tit">PRODUCT</h1>
+                    <p class="txt">대한사료의 품질과학과 앞선 노하우로<br />
+                        세계인 모두가 안심할 수 있는 가장 좋은 먹거리를 생산합니다.
+                    </p>
+                </div>
+                <div class="product">
+                    <div class="product-all">
+                        <div class="slide slide1">
+                            <div class="cardWrap">
+                                <a href="javascript:void(0)"><img src="img/slide01.png" alt="" /></a>
+                                <div class="name">
+                                    <span class="en">POUTRY</span>
+                                    <span class="ko">양계</span>
+                                </div>
+                                <div class="morebtn">
+                                    <p class="more">more</p>
+                                    <div class="morearrow"><a href="javascript:void(0)"><img src="img/btn_more_arr.png" alt="" /></a>
+                                    </div>
+                                    <div class="moreshadow"></div>
+                                </div>
+                            </div>
+                            <!--cardWrap-->
+                        </div>
+                        <!--slide-->
+                        <div class="slide slide2">
+                            <div class="cardWrap">
+                                <a href="javascript:void(0)"><img src="img/slide02.png" alt="" /></a>
+                                <div class="name">
+                                    <span class="en">SWINE</span>
+                                    <span class="ko">양돈</span>
+                                </div>
+                                <div class="morebtn">
+                                    <p class="more">more</p>
+                                    <div class="morearrow"><a href="javascript:void(0)"><img src="img/btn_more_arr.png" alt="" /></a>
+                                    </div>
+                                    <div class="moreshadow"></div>
+                                </div>
+                            </div>
+                            <!--cardWrap-->
+                        </div>
+                        <!--slide-->
+                        <div class="slide slide3">
+                            <div class="cardWrap">
+                                <a href="javascript:void(0)"><img src="img/slide03.png" alt="" /></a>
+                                <div class="name">
+                                    <span class="en">CATTLE</span>
+                                    <span class="ko">축우</span>
+                                </div>
+                                <div class="morebtn">
+                                    <p class="more">more</p>
+                                    <div class="morearrow"><a href="javascript:void(0)"><img src="img/btn_more_arr.png" alt="" /></a>
+                                    </div>
+                                    <div class="moreshadow"></div>
+                                </div>
+                            </div>
+                            <!--cardWrap-->
+                        </div>
+                        <!--slide-->
+                        <div class="slide slide4">
+                            <div class="cardWrap">
+                                <a href="javascript:void(0)"><img src="img/slide04.png" alt="" /></a>
+                                <div class="name">
+                                    <span class="en">AQUA</span>
+                                    <span class="ko">양어</span>
+                                </div>
+                                <div class="morebtn">
+                                    <p class="more">more</p>
+                                    <div class="morearrow"><a href="javascript:void(0)"><img src="img/btn_more_arr.png" alt="" /></a>
+                                    </div>
+                                    <div class="moreshadow"></div>
+                                </div>
+                            </div>
+                            <!--cardWrap-->
+                        </div>
+                        <!--slide-->
+                        <div class="slide slide5">
+                            <div class="cardWrap">
+                                <a href="javascript:void(0)"><img src="img/slide05.png" alt="" /></a>
+                                <div class="name">
+                                    <span class="en">ETC.</span>
+                                    <span class="ko">기타</span>
+                                </div>
+                                <div class="morebtn">
+                                    <p class="more">more</p>
+                                    <div class="morearrow"><a href="javascript:void(0)"><img src="img/btn_more_arr.png" alt="" /></a>
+                                    </div>
+                                    <div class="moreshadow"></div>
+                                </div>
+                            </div>
+                            <!--cardWrap-->
+                        </div>
+                        <!--slide-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box pg4">
+            <div class="cursors"></div>
+            <div class="gridbox">
+                <h2 class="tit">Q&C</h2>
+                <div class="pg4-bg">
+                    <div class="bg-img">
+                        <div class="pg4-img"></div>
+                    </div>
+                    <div class="txt">
+                        <span class="tit">Continuous<br />
+                            Quality improvement
+                        </span>
+                        <p class="stxt1">지속적인 품질 제일주의, 고객 제일주의를 실현하겠습니다.</p>
+                        <p class="stxt2">대한사료는 지속적인 품질 개선과 품질 보증 활동을 통해<br />
+                            사료를 넘어 식품이라는 생각을 가지고 고객이<br />
+                            요구하고 기대하는 품질에 적합한 제품과<br />
+                            서비스를 제공하여 제품을 생산하는<br />
+                            기업이 되도록 최선을 다하겠습니다.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box pg5">
+            <div class="gridbox">
+                <h3 class="tit">CORE VALUE</h3>
+                <div class="corewrap">
+                    <ul class="corebox">
+                        <li class="core1">
+                            <div class="icon"><img src="img/core-icon01.png" alt="" /></div>
+                            <div class="txt">
+                                <p class="tit">Honesty</p>
+                                <p class="stxt">기본과 원칙을 준수하며 투명하게<br />
+                                    일을 처리합니다.</p>
+                            </div>
+                        </li>
+                        <li class="core2">
+                            <div class="icon"><img src="img/core-icon02.png" alt="" /></div>
+                            <div class="txt">
+                                <p class="tit">Passion</p>
+                                <p class="stxt">현재에 안주하지 않고 맡을 일에<br />
+                                    최선을 다합니다.</p>
+                            </div>
+                        </li>
+                        <li class="core3">
+                            <div class="icon"><img src="img/core-icon03.png" alt="" /></div>
+                            <div class="txt">
+                                <p class="tit">Professionalism</p>
+                                <p class="stxt">끊임없는 학습을 바탕으로 스스로의<br />
+                                    전문성을 갈고 닦습니다.</p>
+                            </div>
+                        </li>
+                        <li class="core4">
+                            <div class="icon"><img src="img/core-icon04.png" alt="" /></div>
+                            <div class="txt">
+                                <p class="tit">Cooperation</p>
+                                <p class="stxt">적극적으로 소통하고 협력하여<br />
+                                    시너지를 창출합니다.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="box pg6">
+            <h4>NETWORK</h4>
+            <div class="gridbox">
+                <div class="networkwrap">
+                    <div class="map">
+                        <img src="img/network-img.png" alt="" />
+                        <div class="locationWrap">
+                            <span class="loaction1" data-loca="add1">경인</span>
+                            <span class="loaction2" data-loca="add2">본사</span>
+                            <span class="loaction3" data-loca="add3">안성</span>
+                            <span class="loaction4" data-loca="add4">천안</span>
+                            <span class="loaction5" data-loca="add5">홍성</span>
+                            <span class="loaction6" data-loca="add6">전주</span>
+                            <span class="loaction7" data-loca="add7">남원</span>
+                            <span class="loaction8" data-loca="add8">광주</span>
+                            <span class="loaction9" data-loca="add9">영주</span>
+                            <span class="loaction10" data-loca="add10">대구</span>
+                            <span class="loaction11" data-loca="add11">창원</span>
+                            <span class="loaction12" data-loca="add12">사천</span>
+                            <span class="loaction13" data-loca="add13">제주</span>
+                        </div>
+                    </div>
+                    <!--map-->
+                </div>
+                <!--network-->
+                <div class="txt">
+                    <span class="tit">About Company</span>
+                    <p class="stxt1">전국에 물류센터 및 영업소의 서비스망을 갖추고<br />
+                        고객에게 더 가까이 다가가는 대한사료의 차별화된 지역별 서비스를 받으실 수 있습니다.
+                    </p>
+                    <p class="stxt2">※본사에서는 제품 구매를 하실 수 없습니다. 가까운 영업소로 문의해주시길 바랍니다.</p>
+                    <div class="addwrap">
+                        <div class="addbox add1">
+                            <p>경인본부 경인영업소</p>
+                            <span class="add-tit">
+                                <p>주소</p>
+                                <p>대표전화</p>
+                                <p>팩스</p>
+                            </span>
+                            <span class="add-txt">
+                                <p>경기도 양주시 은현면 화합로 719번길 4 [11426]</p>
+                                <p>(031) 867-2296~8</p>
+                                <p>(031) 867-7855</p>
+                            </span>
+                        </div>
+                        <div class="addbox add2">
+                            <p>인천본사 대한사료(주)</p>
+                            <span class="add-tit">
+                                <p>주소</p>
+                                <p>대표전화</p>
+                                <p>팩스</p>
+                            </span>
+                            <span class="add-txt">
+                                <p>인천광역시 중구 북성포길 13 대한사료(주)</p>
+                                <p>(032) 770-1100~2</p>
+                                <p>(032) 777-2340</p>
+                            </span>
+                        </div>
+                        <div class="addbox add3">
+                            <p>동부본부 안성영업소</p>
+                            <span class="add-tit">
+                                <p>주소</p>
+                                <p>대표전화</p>
+                                <p>팩스</p>
+                            </span>
+                            <span class="add-txt">
+                                <p>경기도 안성시 일죽면 일생로 112 [17532]</p>
+                                <p>(031) 671-5891~2</p>
+                                <p>(031) 671-5894</p>
+                            </span>
+                        </div>
+                        <div class="addbox add4">
+                            <p>중부1본부 천안영업소</p>
+                            <span class="add-tit">
+                                <p>주소</p>
+                                <p>대표전화</p>
+                                <p>팩스</p>
+                            </span>
+                            <span class="add-txt">
+                                <p>충남 천안시 성남면 성남로 268 [31246]</p>
+                                <p>(041) 553-8243~5</p>
+                                <p>(041) 553-8160</p>
+                            </span>
+                        </div>
+                        <div class="addbox add5">
+                            <p>중부2본부 홍성영업소</p>
+                            <span class="add-tit">
+                                <p>주소</p>
+                                <p>대표전화</p>
+                                <p>팩스</p>
+                            </span>
+                            <span class="add-txt">
+                                <p>충남 홍성군 금마면 충서로 1913 [33282]</p>
+                                <p>(041) 631-2316</p>
+                                <p>(041) 634-9465</p>
+                            </span>
+                        </div>
+                        <div class="addbox add6">
+                            <p>호남1본부 전주영업소</p>
+                            <span class="add-tit">
+                                <p>주소</p>
+                                <p>대표전화</p>
+                                <p>팩스</p>
+                            </span>
+                            <span class="add-txt">
+                                <p>전북 전주시 덕진구 서귀로 186 [54854]</p>
+                                <p>(063) 210-0800~1</p>
+                                <p>(063) 212-0892</p>
+                            </span>
+                        </div>
+                        <div class="addbox add7">
+                            <p>남원하치장</p>
+                            <span class="add-tit">
+                                <p>주소</p>
+                                <p>대표전화</p>
+                                <p>팩스</p>
+                            </span>
+                            <span class="add-txt">
+                                <p>전북 남원시 주천면 쑥고개로 703 [55803]</p>
+                                <p>(063) 633-8173</p>
+                                <p>(063) 631-8173</p>
+                            </span>
+                        </div>
+                        <div class="addbox add8">
+                            <p>호남2본부 광주영업소</p>
+                            <span class="add-tit">
+                                <p>주소</p>
+                                <p>대표전화</p>
+                                <p>팩스</p>
+                            </span>
+                            <span class="add-txt">
+                                <p>전남 나주시 노안면 오정길 368 [58205]</p>
+                                <p>(061) 336-6555~6</p>
+                                <p>(061) 336-6557</p>
+                            </span>
+                        </div>
+                        <div class="addbox add9">
+                            <p>영주하치장</p>
+                            <span class="add-tit">
+                                <p>주소</p>
+                                <p>대표전화</p>
+                                <p>팩스</p>
+                            </span>
+                            <span class="add-txt">
+                                <p>경북 영주시 적서로 239 [36148]</p>
+                                <p>(054) 636-7490</p>
+                                <p>(054) 635-4948</p>
+                            </span>
+                        </div>
+                        <div class="addbox add10">
+                            <p>영남1본부 대구영업소</p>
+                            <span class="add-tit">
+                                <p>주소</p>
+                                <p>대표전화</p>
+                                <p>팩스</p>
+                            </span>
+                            <span class="add-txt">
+                                <p>경북 경산시 와촌면 용천길 23 [38422]</p>
+                                <p>(053) 852-9006</p>
+                                <p>(053) 852-4552</p>
+                            </span>
+                        </div>
+                        <div class="addbox add11">
+                            <p>영남2본부 창원영업소</p>
+                            <span class="add-tit">
+                                <p>주소</p>
+                                <p>대표전화</p>
+                                <p>팩스</p>
+                            </span>
+                            <span class="add-txt">
+                                <p>경남 창원시 의창구 동읍 의창대로 986 [51131]</p>
+                                <p>(055) 291-7111~3</p>
+                                <p>(055) 291-7114</p>
+                            </span>
+                        </div>
+                        <div class="addbox add12">
+                            <p>사천하치장</p>
+                            <span class="add-tit">
+                                <p>주소</p>
+                                <p>대표전화</p>
+                                <p>팩스</p>
+                            </span>
+                            <span class="add-txt">
+                                <p>경남 하동군 진교면 고이리 82 [52342]</p>
+                                <p>(055) 883-8313</p>
+                                <p>(055) 884-8314</p>
+                            </span>
+                        </div>
+                        <div class="addbox add13">
+                            <p>제주하치장</p>
+                            <span class="add-tit">
+                                <p>주소</p>
+                                <p>대표전화</p>
+                                <p>팩스</p>
+                            </span>
+                            <span class="add-txt">
+                                <p>제주 애월읍 장전리 1633-1 [63055]</p>
+                                <p>(064) 796-7220</p>
+                                <p>(064) 796-7223</p>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <!--txt-->
+            </div>
+            <!--gridbox-->
+        </div>
+        <!--pg6 box-->
+        <div class="box pg7">
+            <div class="gridbox">
+                <div class="recruitwrap">
+                    <h5>RECRUIT</h5>
+                    <p class="tit">Together in the future</p>
+                    <p class="txt">대한사료와 함께 미래를 그려나갈 당신을 기다립니다.</p>
+                    <div class="cursors"></div>
+                </div>
+                <footer>
+                    <div class="foot">
+                        <div class="toparea">
+                            <div class="f-logo"><img src="img/f-logo.png" alt="" /></div>
+                            <div class="f-menu">
+                                <div class="f-info">
+                                    <ul class="f-info1">
+                                        <li class="info1">상호 : 대한사료 주식회사 </li>
+                                        <li class="info2"> 대표 : 정근상</li>
+                                        <li class="info3">사업자등록번호 : 104-81-04326</li>
+                                        <li class="info4">주소 : 인천광역시 중구 북성포길 13 대한사료(주)</li>
+                                    </ul>
+                                    <ul class="f-info2">
+                                        <li class="info5">대표전화 : (032) 770-1100~2</li>
+                                        <li class="info6">팩스 : (032) 777-2340</li>
+                                    </ul>
+                                </div>
+                                <div class="family">
+                                    <a href="javascript:void(0)">Family Site </a>
+                                    <ul>
+                                        <li><a href="javascript:void(0)">대한제분</a></li>
+                                        <li><a href="javascript:void(0)">대한싸이로</a></li>
+                                        <li><a href="javascript:void(0)">DH바이탈피드</a></li>
+                                        <li><a href="javascript:void(0)">대한FS</a></li>
+                                        <li><a href="javascript:void(0)">글로벌심층수</a></li>
+                                        <li><a href="javascript:void(0)">보나비</a></li>
+                                        <li><a href="javascript:void(0)">우리와</a></li>
+                                        <li><a href="javascript:void(0)">애그리치글로벌</a></li>
+                                    </ul>
+                                </div>
+                                <!--family-->
+                            </div>
+                            <!--f-menu-->
+                        </div>
+                        <!--toparea-->
+                        <div class="copy">Copyright (C) 2022 DAEHANFEED CO.LTD. All Rights Reserved. 대한사료(주)</div>
+                    </div>
+                    <!--foot-->
+                </footer>
+            </div>
+        </div>
+    </div>
+    <!--wrap-->
+</body>
+
+</html>
